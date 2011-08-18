@@ -231,7 +231,7 @@ namespace cMailSlot
             else if (Type == SlotType.writer)
             {
                 // Try to open the file.
-                handleValue = CreateFile(Filename, FileAccess.Write, FileShare.Read, IntPtr.Zero, FileMode.Open, 0, IntPtr.Zero);
+                handleValue = CreateFile(Filename, FileAccess.Write, FileShare.ReadWrite, IntPtr.Zero, FileMode.Open, 0, IntPtr.Zero);
             }
 
             // If the handle is invalid,
